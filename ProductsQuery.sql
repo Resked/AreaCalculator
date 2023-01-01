@@ -5,12 +5,12 @@ CREATE TABLE Products (
 
 INSERT INTO Products
 VALUES
-	(1, 'Бананы'),
-	(2, 'Клубника'),
-	(3, 'Груша'),
-	(4, 'Малина'),
-	(5, 'Картофель'),
-	(6, 'Стол');
+	(1, 'Banana'),
+	(2, 'Strawberry'),
+	(3, 'Pear'),
+	(4, 'Raspberries'),
+	(5, 'Potato'),
+	(6, 'Table');
 
 CREATE TABLE Categories (
 	CategoryId INT PRIMARY KEY,
@@ -19,9 +19,9 @@ CREATE TABLE Categories (
 
 INSERT INTO Categories
 VALUES
-	(1, 'Овощи'),
-	(2, 'Фрукты'),
-	(3, 'Ягоды');
+	(1, 'Vegetables'),
+	(2, 'Fruit'),
+	(3, 'Berries');
 
 CREATE TABLE ProductCategories (
 	Product_Id INT FOREIGN KEY REFERENCES Products(ProductId),
